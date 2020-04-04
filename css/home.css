@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-rows: 150px 600px 100px;
+    grid-gap: 15px;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.content {
+    border: 1px solid yellowgreen;
+}
+
+.footer {
+    border: 1px solid blueviolet;
+}
