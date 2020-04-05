@@ -2,15 +2,8 @@ html {
     box-sizing: border-box;
   }
 
-  /* *, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  } */
-
 body {
-    background-image: url("../image/rain.jpg");
-    /* background-repeat: no-repeat; */
+    background-image: url("../image/landscape.jpg");
     background-size: cover;
 }
 
@@ -33,13 +26,19 @@ nav {
     display: inline-block;
     font-family: 'Sofia';
     font-size: 70px;
-    padding-left: 30px;
+    padding-left: 25px;
+}
+
+#finnesse a {
+    color: rgb(204, 38, 204);
+    text-decoration: none;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .navs {
@@ -59,14 +58,13 @@ nav {
     background-color: white;
   } */
   .nav-item:hover a{
-    background-color: darkgreen;
+    background-color: tomato;
   }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid yellowgreen;
 }
 
 .footer {
@@ -75,7 +73,26 @@ nav {
 }
 
 .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
     height: 300px;
-    border: 2px solid red;
+    color: white;
+}
+
+#text {
+    color: rgb(235, 225, 235);
+    font-family: 'Sofia';
+    font-size: 50px;
+    text-align: center;
+}
+
+button {
+    color: rebeccapurple;
+    background-color: salmon;
+    border: none;
+    padding: 15px 32px;
+    font-family: 'Sofiagi';
+    font-size: 16px;
 }
