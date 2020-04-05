@@ -1,17 +1,53 @@
+body {
+    background-image: url("../image/rain.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
 .container {
     display: grid;
-    grid-template-rows: 150px 600px 100px;
-    grid-gap: 15px;
+    grid-template-rows: 100px 600px 100px;
+    /* grid-template-columns: ; */
+    /* grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "main main main main main main"
+    "ft ft ft ft hd hd"; */
+    grid-gap: 1px;
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-gap: 4px;
+}
+
+#finnesse {
+    color: red;
     border: 1px solid red;
 }
 
+.navbar{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 25px;
+}
+
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid yellowgreen;
 }
 
 .footer {
+    /* background-color: whitesmoke; */
     border: 1px solid blueviolet;
+}
+
+.content-box {
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
 }
