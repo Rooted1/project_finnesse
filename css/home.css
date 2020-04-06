@@ -5,6 +5,7 @@ html {
 body {
     background-image: url("../image/landscape.jpg");
     background-size: cover;
+    margin: auto;
 }
 
 nav {
@@ -17,16 +18,13 @@ nav {
     grid-gap: 1px;
 }
 
-.header-container {
-    
-}
-
 #finnesse {
     color: red;
     display: inline-block;
     font-family: 'Sofia';
     font-size: 70px;
     padding-left: 25px;
+    text-shadow: 2px 2px 8px gray;
 }
 
 #finnesse a {
@@ -46,6 +44,7 @@ nav {
     justify-content: space-between;
     list-style: none;
     padding-right: 50px;
+    text-shadow: 2px 2px 8px gray;
 }
 
 .nav-item a {
@@ -54,9 +53,7 @@ nav {
     text-decoration: none;
     color: white;
   }
-  /* .nav-item:hover {
-    background-color: white;
-  } */
+
   .nav-item:hover a{
     background-color: tomato;
   }
@@ -65,6 +62,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 8px gray;
 }
 
 .footer {
@@ -92,7 +90,9 @@ button {
     color: rebeccapurple;
     background-color: salmon;
     border: none;
+    border-radius: 8px;
     padding: 15px 32px;
-    font-family: 'Sofiagi';
+    font-family: 'Sofia';
     font-size: 16px;
+    text-shadow: 2px 2px 8px gray;
 }
