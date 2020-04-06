@@ -9,7 +9,7 @@ body {
     display: grid;
     align-items: stretch;
     grid-template-rows: 100px 100px 400px 100px;
-    grid-gap: 5px;
+    /* grid-gap: 5px; */
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "t t t t t t t t"
@@ -18,18 +18,58 @@ body {
       "ft ft ft ft ft ft ft ft";
 }
 
-.header {
+.navbar {
     grid-area: hd;
-    border: 1px solid darkorange;
+    /* border: 1px solid darkorange; */
 }
+
+#finnesse {
+    color: red;
+    display: inline-block;
+    font-family: 'Sofia';
+    font-size: 70px;
+    padding-left: 25px;
+    text-shadow: 2px 2px 8px gray;
+}
+
+#finnesse a {
+    color: rgb(204, 38, 204);
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 50px;
+    text-shadow: 2px 2px 8px gray;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-item:hover a{
+    background-color: tomato;
+  }
 
 .title {
     grid-area: t;
-    background-color: rgb(248, 234, 234);
+    background-color: rgb(240, 233, 233);
     height: 100px;
     font-family: "Tangerine", serif;
     text-align: center;
-    /* border: 1px solid purple; */
+    text-shadow: 2px 2px 8px rgb(151, 145, 145);
 } 
 
 .content {
@@ -37,18 +77,21 @@ body {
     display: flex;
     justify-content: space-around;
     height: 500px;
-    background-color: rgb(248, 234, 234);
+    background-color: rgb(243, 240, 240);
     /* border: 1px solid yellowgreen; */
 }
 
 .img {
     width: 30%;
+    padding: 8px;
     /* border: 1px solid red; */
 }
 
 img {
     width: 481.39px;
-    height: 500px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main {
@@ -77,10 +120,11 @@ img {
     padding-top: 11px;
     line-height: 200%;
     color: rgb(70, 52, 52);
+    text-shadow: 2px 2px 8px gray;
   }
   
 .footer {
     grid-area: ft;
     height: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
